@@ -1,5 +1,5 @@
 #Variables for HXE ACI deployment
-$resourceGroupName='jt-kafka-rg'
+$resourceGroupName='jt-hanaexpess-rg'
 $aciInstance='aci-hxe-instance001'
 $fileShareName='hxe-config001'
 $aciHxeImage='store/saplabs/hanaexpress:2.00.057.00.20220119.1'
@@ -28,7 +28,7 @@ switch ($inputKey.ToUpper()) {
 }
 
 #Create resource group
-#az group create --name $resourceGroupName --location $azureRegion --output table
+az group create --name $resourceGroupName --location $azureRegion --output table
 
 #Prepare deployment files and create master password JSON
 $credential=Get-Credential -UserName hxeMasterPassword
