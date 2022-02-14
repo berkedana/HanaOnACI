@@ -1,7 +1,7 @@
 #Variables for HXE ACI deployment
 $resourceGroupName='jt-hanaexpess-rg'
-$aciInstance='aci-hxe-instance001'
-$fileShareName='hxe-config001'
+$aciInstance='aci-hxe-instance002'
+$fileShareName='hxe-config002'
 $aciHxeImage='jtabernero/hanaexpress:2.00.057.00.20220119.1'
 $registryLoginServer='hub.docker.com'
 
