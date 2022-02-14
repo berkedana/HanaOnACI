@@ -5,6 +5,8 @@ $fileShareName='hxe-config001'
 $aciHxeImage='store/saplabs/hanaexpress:2.00.057.00.20220119.1'
 $registryLoginServer='hub.docker.com'
 
+az account set --subscription "Azure Lab"
+
 $inputKey=Read-Host '(1) West Europe
 (2) North Europe
 (3) East US
