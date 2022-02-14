@@ -28,7 +28,7 @@ switch ($inputKey.ToUpper()) {
 }
 
 #Create resource group
-az group create --name $resourceGroupName --location $azureRegion --output table
+#az group create --name $resourceGroupName --location $azureRegion --output table
 
 #Prepare deployment files and create master password JSON
 $credential=Get-Credential -UserName hxeMasterPassword
