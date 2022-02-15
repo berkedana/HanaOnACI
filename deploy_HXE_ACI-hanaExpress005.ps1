@@ -1,12 +1,14 @@
 #Variables for HXE ACI deployment
-$resourceGroupName='jt-hanaexpess-rg'
-$aciInstance='aci-hxe-instance002'
-$fileShareName='hxe-config002'
+$resourceGroupName='jt-kafka-rg'
+$aciInstance='aci-hana-instance01'
+$fileShareName='hana-config002'
 $aciHxeImage='jtabernero/hanaexpress:2.00.057.00.20220119.1'
 $registryLoginServer='hub.docker.com'
+$azureRegion='westeurope'
 
 az account set --subscription "Azure Lab"
 
+<#
 $inputKey=Read-Host '(1) West Europe
 (2) North Europe
 (3) East US
@@ -29,6 +31,7 @@ switch ($inputKey.ToUpper()) {
 
 #Create resource group
 az group create --name $resourceGroupName --location $azureRegion --output table
+#>
 
 #Prepare deployment files and create master password JSON
 $credential=Get-Credential -UserName hxeMasterPassword
