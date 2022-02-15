@@ -2,7 +2,7 @@
 $resourceGroupName='jt-kafka-rg'
 $aciInstance='aci-hana-instance01'
 $fileShareName='hana-config002'
-$aciHxeImage='jtabernero/hanaexpress:2.00.057.00.20220119.1'
+$aciHxeImage='store/saplabs/hanaexpress:2.00.057.00.20220119.1'
 $registryLoginServer='hub.docker.com'
 $azureRegion='westeurope'
 
